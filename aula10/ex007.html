@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando números</title>
+
+    <style>
+        h1{
+            margin-left: 35px;
+        }
+        input{
+            font: normal 10pt Arial;
+            width:  100px;
+            }
+
+        #res{
+            margin-top: 10px;
+            color: blue;
+            font-size: 15pt; 
+            background-color: rgba(0, 0, 0, 0.199);   
+            width: 330px;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" id="txtn1" name="txtn1"> +
+    <input type="number" id="txtn2" name="txtn2">
+    <input type="button" value="SOMAR" onclick="somar()">
+    <!-- o botão SOMAR irá executar a função somar(), quando for acionado
+    o evento onclick-->
+    <div id="res">Resultado: </div>
+
+    <script>
+    
+        function somar(){
+            var tn1 = document.querySelector('#txtn1')
+            //fazendo uma ligação entre a caixa de texto e essa variável tn1
+            var tn2 = document.querySelector('#txtn2')
+            //fazendo uma ligação entre a caixa de texto e essa variável tn2
+            var res = document.querySelector('#res')
+            //fazendo uma ligação entre a caixa de texto e essa variável res
+
+        
+            var n1 = Number(tn1.value)
+            //convertendo o tn1(String) em um número n1(Number)
+            var n2 = Number(tn2.value)
+            //convertendo o tn2(String) em um número n2(Number)
+            var soma = n1 + n2
+            //fazendo a soma entre os valores
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a  ${soma}`
+            //altera o conteúdo da div com id#res, para o resultado da soma, com
+            //essa templateString
+
+
+        }
+    </script>
+</body>
+</html>

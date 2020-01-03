@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    body{
+        background: rgb(22, 141, 219);
+        color:#f7f7f7;
+        font: normal 15pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Iniciando estudo com DOM</h1>
+        <p>Aprendendo a usar <strong>DOM</strong> </p>
+        <p>Aqui vai o resultado</p>
+        <div id="msg">Clique em mim</div>
+        <div class="msg">Clique em mim novamente</div>
+
+
+
+
+        <script>
+           var q = document.querySelector('div#msg') //toda div é representada por um #
+           q.style.background = 'black' // mudando a cor para preta
+
+           var q = document.querySelector('div.msg') //toda class é representada por um .
+           q.style.background = 'red' // mudando a cor para vermelha
+        </script>
+    </body>
+</body>
+</html>

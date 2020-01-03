@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    body{
+        background: rgb(22, 141, 219);
+        color:#f7f7f7;
+        font: normal 15pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Iniciando estudo com DOM</h1>
+        <p>Aprendendo a usar <strong>DOM</strong> </p>
+        <p>Aqui vai o resultado</p>
+        <div id="msg">Clique em mim</div>
+
+
+
+        <script>
+            var p1 = document.getElementsByTagName('p')[0]//pegando elemento pela tag 'p'
+                                                          //[0] porque tá pegando a primeira tag
+            document.write(p1.innerHTML)//colocando o texto que está no parágrafo                
+               
+            p1.style.color = 'black'
+
+           /*  var corpo = document.body
+            corpo.style.background = 'white' //deixando o background branco */
+
+
+            var d = document.getElementById('msg') // pegamdo o elemento pelo id
+            d.style.color = 'green' //mudando pela cor verde
+
+            d.innerText = 'mudando a cor da div' // mudando a cor da div
+        </script>
+    </body>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    <style>
+        h1{
+            font-size: 30pt Arial;
+        }
+        div#r{
+            background: rgb(121, 226, 245);
+            margin-top: 10px;
+            width: 188pt;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NACIONALIDADE</h1>
+    <div>Eu nasci em:</div>
+    <input type="text" id="txt">
+    <input type="button" id="btn" value="BUSCAR" onclick="buscar()">
+    <div id="r">Nacionalidade:</div>
+
+    <script>
+
+
+        function buscar() {
+            var pais = document.querySelector('input#txt').value
+            //.value pra pegar o valor que foi digitado no input
+            var resposta = document.querySelector('div#r')
+            if (pais == 'Brasil' || pais =='brasil') {
+                resposta.innerHTML = `Você nasceu no ${pais}, 
+            portanto, você é Brasileiro`
+
+            } else {
+                resposta.innerHTML = `Você é estrangeiro`
+            }
+        }
+
+    </script>
+</body>
+
+</html>

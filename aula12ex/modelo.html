@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,29 @@
     <title>Verificador de Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <header>
         <h1>Verificador de Idade</h1>
     </header>
-    
+
     <section>
-        <div>
-            div 1
+        <div id="d1">
+
+            Ano de Nascimento:
+            <input type="number" id="adn"><br><br>
+            <form name="form1">
+                Sexo:
+                <input type="radio" name="sexo" id="m"> Masculino
+                <input type="radio" name="sexo" id="f"> Feminino <br>
+            </form>
+            <input type="button" name="botao" id="bt" value="Verificar" onclick="verificar()">
         </div>
 
-        <div>
-            div 2
+        <div id="d2">
+            <p id="prg">Preencha os dados acima para obter o resultado </p>
+
+            <img name='img'> 
         </div>
     </section>
 
@@ -27,6 +39,7 @@
     </footer>
 
 
-    <script src="script.js"></script src>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -7,6 +7,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
 body{
     background: rgb(60, 166, 253);
     font: normal 15pt Arial;
+    
 
 }
 section{
@@ -26,4 +27,32 @@ footer{
     font-style: italic;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.424);
 
+}
+#adn{
+    border-radius: 5pt;
+    height: 15pt;
+
+}
+#d2{
+   margin-top: 10pt;
+}
+#bt{
+    margin-top: 20px;
+    border-radius: 6pt;
+    font: normal Arial;
+    font-size: 15pt ;
+    
+    
+}
+#prg{
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 9999999999990pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

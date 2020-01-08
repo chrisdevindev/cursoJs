@@ -12,46 +12,46 @@ function verificar() {
     if (ano == false) {
         alert("Digite o ano de nascimento!")
         return false
-    }if (document.form1.sexo[0].checked == false &&
+    } if (document.form1.sexo[0].checked == false &&
         document.form1.sexo[1].checked == false) {
         alert("Selecione um Sexo")
         return false
-    }if (ano > 2019 || ano < 0) {
+    } if (ano > 2019 || ano < 0) {
         alert("Data inválida")
         return false
     }
 
 
 
-    else if (document.form1.sexo[0].checked == true && idade >= 18 && idade <= 49){
+    else if (document.form1.sexo[0].checked == true && idade >= 18 && idade <= 49) {
         sexo = "Homem"
         info.innerHTML = `É um ${sexo} de  ${idade} anos`
         img.src = "homem.jpg"
-    } else if (document.form1.sexo[1].checked == true && idade >= 18 && idade <=49){
+    } else if (document.form1.sexo[1].checked == true && idade >= 18 && idade <= 49) {
         sexo = "Mulher"
         info.innerHTML = `É uma ${sexo} de  ${idade} anos`
         img.src = "mulher.jpg"
     }
-    
+
     else if (document.form1.sexo[0].checked == true && idade <= 17) {
         sexo = "Menino"
         info.innerHTML = `É um ${sexo} de  ${idade} anos`
         img.src = "menino.jpg"
-    }else if (document.form1.sexo[1].checked == true && idade <= 17) {
+    } else if (document.form1.sexo[1].checked == true && idade <= 17) {
         sexo = "Menina"
         info.innerHTML = `É uma ${sexo} de  ${idade} anos`
         img.src = "menina.jpg"
     }
-    
+
     else if (document.form1.sexo[0].checked == true && idade >= 50) {
         sexo = "senhor"
         info.innerHTML = `É um ${sexo} de ${idade}`
         img.src = "senhor.jpg"
-    }else if (document.form1.sexo[1].checked == true && idade >=50){
+    } else if (document.form1.sexo[1].checked == true && idade >= 50) {
         sexo = "senhora"
         info.innerHTML = `É uma ${sexo} de ${idade} anos`
-        img.src ="senhora.jpg"
-        
+        img.src = "senhora.jpg"
+
     }
 
 

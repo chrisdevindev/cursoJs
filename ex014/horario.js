@@ -4,7 +4,6 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
 
-    hora = 11
     
     msg.innerHTML = `São exatamente ${hora} horas`
 

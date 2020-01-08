@@ -1,0 +1,4 @@
+var cont = 1 
+do {
+    console.log(`Contando em ${cont}`)
+} while (cont <= 10);
